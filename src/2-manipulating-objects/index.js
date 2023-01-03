@@ -5,3 +5,7 @@ let terah = {
   hairColor: 'brown',
   eyeColor: 'brown',
 }
+
+let adam
+
+module.exports = { terah, adam }
