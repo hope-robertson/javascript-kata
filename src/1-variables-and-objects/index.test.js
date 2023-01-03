@@ -38,7 +38,7 @@ describe('allowedIn', () => {
   })
 
   it('should be `true`', () => {
-    expect(allowedIn).toBe(false)
+    expect(allowedIn).toBe(true)
   })
 })
 

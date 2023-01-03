@@ -18,7 +18,7 @@ describe('gradebook initialisation', () => {
   })
 
   it("includes Wiremu's scores (the third entry in `scores`)", () => {
-    expect(gradebook.Wiremu && gradebook.Wiremy.testScores).toBe(scores[2])
+    expect(gradebook.Wiremu && gradebook.Wiremu.testScores).toBe(scores[2])
   })
 
   it("includes Susan's scores (the second entry in `scores`)", () => {
@@ -44,7 +44,7 @@ describe('average', () => {
   })
 
   it('should return a number', () => {
-    expect(typeof average([1])).toBe(number)
+    expect(typeof average([1])).toBe('number')
   })
 
   it('should return the average (mean) of numbers passed to it', () => {
@@ -64,7 +64,7 @@ describe('getAverage', () => {
 
   it('should return the average test score for any student name', () => {
     expect(getAverage('Susan')).toBe(85)
-    expect(getAverage('Wiremy')).toBe(75)
+    expect(getAverage('Wiremu')).toBe(75)
     expect(getAverage('Elizabeth')).toBe(92.5)
   })
 })
@@ -74,12 +74,12 @@ describe.skip('enterScores', () => {
     expect(typeof enterScores).toBe('function')
   })
 
-  it('', () => {
+  it('Should enter scores into a fresh gradebook', () => {
     const _gradebook = {}
     enterScores(_gradebook, students, scores)
-    expect(_gradebook.Joseph).toBe(scores[0])
-    expect(_gradebook.Susan).toBe(scores[1])
-    expect(_gradebook.Wiremu).toBe(scores[2])
-    expect(_gradebook.Elizabeth).toBe(scores[3])
+    expect(_gradebook.Joseph.testScores).toBe(scores[0])
+    expect(_gradebook.Susan.testScores).toBe(scores[1])
+    expect(_gradebook.Wiremu.testScores).toBe(scores[2])
+    expect(_gradebook.Elizabeth.testScores).toBe(scores[3])
   })
 })

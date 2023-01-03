@@ -1,16 +1,28 @@
-# Kata prototype
+# Javascript Katas
 
 First get all set up by running `npm install` in this directory, this can take a few minutes.
 
-The `src` folder contains some JavaScript files with incomplete functions:
+This challenge is broken into 5 a suite, you can run them each individually by running `npm run` followed by the name of the suite, like this:
 
-1. `capitalize.js` this function takes a sentences as a string and should return the same
-   sentence with all the words capitalised
-2. `concatMyArray.js` this function takes a
+```sh
+$ npm test 1-variables-and-objects
+```
 
-[/src/index.js](./src/index.js) contains some incomplete functions, complete them to finish this kata.
+The suites are called:
 
-Run `npm test` to test your code. When you're finished it should look like this.
+1. `1-variables-and-objects`
+2. `2-manipulating-objects`
+3. `3-fizzbuzz`
+4. `4-gradebook`
+5. `5-builtin-methods`
+
+or you can run them all at once like this:
+
+```sh
+$ npm test
+```
+
+When you've completed all 5 suites the output should look a little like this
 
 ```sh
 $ npm test
@@ -18,14 +30,19 @@ $ npm test
 > test
 > jest
 
- PASS  src/capitalize.test.js
- PASS  src/whereAreYou.test.js
- PASS  src/concatMyArray.test.js
- PASS  src/deBee.test.js
+ PASS  src/5-builtin-methods/whereAreYou.test.js
+ PASS  src/4-gradebook/index.test.js
+ PASS  src/2-manipulating-objects/index.test.js
+ PASS  src/5-builtin-methods/concatMyArray.test.js
+ PASS  src/1-variables-and-objects/index.test.js
+ PASS  src/3-fizzbuzz/super-fizzbuzz.test.js
+ PASS  src/5-builtin-methods/capitalize.test.js
+ PASS  src/5-builtin-methods/deBee.test.js
+ PASS  src/3-fizzbuzz/fizzbuzz.test.js
 
-Test Suites: 4 passed, 4 total
-Tests:       10 passed, 10 total
+Test Suites: 9 passed, 9 total
+Tests:       2 skipped, 58 passed, 60 total
 Snapshots:   0 total
-Time:        0.488 s, estimated 1 s
+Time:        0.883 s, estimated 1 s
 Ran all test suites.
 ```
