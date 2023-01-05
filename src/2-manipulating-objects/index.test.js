@@ -27,15 +27,6 @@ describe('terah', () => {
   it('should not have a eyeColor property any more', () => {
     expect(terah).not.toHaveProperty('eyeColor')
   })
-
-  it('should have a children property with an object value', () => {
-    expect(terah.children).not.toBeNull()
-    expect(typeof terah.children).toBe('object')
-  })
-
-  it('should be the same as adam.children', () => {
-    expect(terah.children).toBe(adam.children)
-  })
 })
 
 describe('ben', () => {
@@ -43,7 +34,7 @@ describe('ben', () => {
     expect(terah.children).toHaveProperty('ben', expect.any(Object))
   })
 
-  it("should be named 'Ben'", () => {
+  it("should be an object have a property `name` with the value 'Ben'", () => {
     expect(terah.children.ben).toHaveProperty('name', 'Ben')
   })
 })
@@ -53,7 +44,7 @@ describe('wilson', () => {
     expect(terah.children).toHaveProperty('wilson', expect.any(Object))
   })
 
-  it("should be named 'Wilson'", () => {
+  it("should be an object have a property `name` with the value 'Wilson'", () => {
     expect(terah.children.wilson).toHaveProperty('name', 'Wilson')
   })
 })
@@ -63,7 +54,18 @@ describe('felicia', () => {
     expect(terah.children).toHaveProperty('felicia', expect.any(Object))
   })
 
-  it("should be named 'Felicia'", () => {
+  it("should be an object have a property `name` with the value 'Wilson'", () => {
     expect(terah.children.felicia).toHaveProperty('name', 'Felicia')
+  })
+})
+
+describe("terah's children", () => {
+  it('should have a children property with an object value', () => {
+    expect(terah.children).not.toBeNull()
+    expect(typeof terah.children).toBe('object')
+  })
+
+  it('should be the same as adam.children', () => {
+    expect(terah.children).toBe(adam.children)
   })
 })
