@@ -7,20 +7,20 @@ let terah = {
   eyeColor: 'brown',
 }
 
-let adam
-// Your code goes below this line
+// ** Your code goes below this line ** //
 
 // 1. Use object literal notation to assign adam the value of an object with no properties.
+let adam
 
 // 2. Give the adam object a name key that has the value "Adam".
 
-// 3. Add a "spouse" key to terah and assign it the value of adam.
+// 3. Add a spouse key to the adam object and assign it the value of terah.
 
-// 4. Change the value of the `terah` "age" property to 33.
+// 4. Add a "spouse" key to terah and assign it the value of adam.
 
-// 5. Remove the eyeColor property from terah (hint: use the delete operator).
+// 5. Change the value of the terah "age" property to 33.
 
-// 6. Add a spouse key to the adam object and assign it the value of terah.
+// 6. Remove the eyeColor property from terah (hint: use the delete operator).
 
 // 7. Add a children key to terah and use object literal notation to assign this variable to an empty object.
 

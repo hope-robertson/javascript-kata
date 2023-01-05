@@ -27,6 +27,11 @@ describe('terah', () => {
   it('should not have a eyeColor property any more', () => {
     expect(terah).not.toHaveProperty('eyeColor')
   })
+
+  it('should have a children property with an object value', () => {
+    expect(terah.children).not.toBeNull()
+    expect(typeof terah.children).toBe('object')
+  })
 })
 
 describe('ben', () => {
@@ -60,11 +65,6 @@ describe('felicia', () => {
 })
 
 describe("terah's children", () => {
-  it('should have a children property with an object value', () => {
-    expect(terah.children).not.toBeNull()
-    expect(typeof terah.children).toBe('object')
-  })
-
   it('should be the same as adam.children', () => {
     expect(terah.children).toBe(adam.children)
   })
