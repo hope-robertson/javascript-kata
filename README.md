@@ -15,6 +15,7 @@ The suites are called:
 3. `3-super-fizzbuzz`
 4. `4-gradebook`
 5. `5-builtin-methods`
+6. `6-js-olympics`
 
 or you can run them all at once like this:
 
@@ -47,4 +48,16 @@ Tests:       2 skipped, 58 passed, 60 total
 Snapshots:   0 total
 Time:        0.883 s, estimated 1 s
 Ran all test suites.
+```
+
+The last test suite is optional, so it currently starts like this:
+
+```js
+describe.skip('The JS Olympics (stretch)', () => {
+```
+
+This means the tests won't run, to active these tests just remove the `.skip` so it looks like this:
+
+```js
+describe('The JS Olympics (stretch)', () => {
 ```
