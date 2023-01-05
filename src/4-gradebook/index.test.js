@@ -5,8 +5,8 @@ const {
   getAverage,
   enterScores,
   scores,
-  students,
 } = require('./index')
+const students = ["Joseph", "Naomi", "Yosan", "David"]
 
 describe('gradebook initialisation', () => {
   it('is an object', () => {
@@ -69,7 +69,7 @@ describe('getAverage', () => {
   })
 })
 
-describe.skip('enterScores', () => {
+describe('enterScores', () => {
   it('should be a function', () => {
     expect(typeof enterScores).toBe('function')
   })
@@ -78,8 +78,8 @@ describe.skip('enterScores', () => {
     const _gradebook = {}
     enterScores(_gradebook, students, scores)
     expect(_gradebook.Joseph.testScores).toBe(scores[0])
-    expect(_gradebook.Susan.testScores).toBe(scores[1])
-    expect(_gradebook.Wiremu.testScores).toBe(scores[2])
-    expect(_gradebook.Elizabeth.testScores).toBe(scores[3])
+    expect(_gradebook.Naomi.testScores).toBe(scores[1])
+    expect(_gradebook.Yosan.testScores).toBe(scores[2])
+    expect(_gradebook.David.testScores).toBe(scores[3])
   })
 })
