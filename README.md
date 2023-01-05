@@ -10,7 +10,7 @@ $ npm test 1-variables-and-objects
 
 The suites are called:
 
-1. `1-variables-and-objects`
+1. `1-variables-and-arrays`
 2. `2-manipulating-objects`
 3. `3-super-fizzbuzz`
 4. `4-gradebook`
@@ -37,7 +37,7 @@ $ npm test
  PASS  src/4-gradebook/index.test.js
  PASS  src/2-manipulating-objects/index.test.js
  PASS  src/5-builtin-methods/concatMyArray.test.js
- PASS  src/1-variables-and-objects/index.test.js
+ PASS  src/1-variables-and-arrays/index.test.js
  PASS  src/3-fizzbuzz/super-fizzbuzz.test.js
  PASS  src/5-builtin-methods/capitalize.test.js
  PASS  src/5-builtin-methods/deBee.test.js

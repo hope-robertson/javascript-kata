@@ -16,7 +16,7 @@ describe('fizzbuzz', () => {
     expect(fizzbuzz(40)).toBe('Buzz')
   })
 
-  it('should return the number you pass it in most cases', () => {
+  it('should return the number you pass it if not divisible by 3 or 5', () => {
     expect(fizzbuzz(7)).toBe(7)
     expect(fizzbuzz(17)).toBe(17)
   })
