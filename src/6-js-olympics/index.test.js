@@ -1,13 +1,14 @@
 const { athleteArray, unjumble, removeOdds, newAthlete } = require('./index')
 
 let log = jest.spyOn(console, 'log').mockImplementation(() => {})
-describe.skip('The JS Olympics (stretch)', () => {
+describe('The JS Olympics (stretch)', () => {
   describe('The Warmup', () => {
     it('athleteArray should contain several athletes', () => {
       expect(athleteArray.length).toBeGreaterThan(1)
     })
 
     it('items in the athleteArray should be objects', () => {
+      expect(athleteArray.length).toBeGreaterThan(1)
       for (const athlete of athleteArray) {
         expect(typeof athlete).toBe('object')
         expect(Array.isArray(athlete)).toBe(false)
@@ -15,6 +16,7 @@ describe.skip('The JS Olympics (stretch)', () => {
     })
 
     it('each item in the athleteArray should have: name, age, sport and quote ', () => {
+      expect(athleteArray.length).toBeGreaterThan(1)
       for (const athlete of athleteArray) {
         expect(athlete).toHaveProperty('name')
         expect(athlete).toHaveProperty('age')
@@ -26,6 +28,7 @@ describe.skip('The JS Olympics (stretch)', () => {
 
   describe('The bulk up', () => {
     it('each athlete should have a `win` function', () => {
+      expect(athleteArray.length).toBeGreaterThan(1)
       for (const athlete of athleteArray) {
         expect(athlete).toHaveProperty('win')
         expect(typeof athlete.win).toBe('function')
@@ -33,6 +36,7 @@ describe.skip('The JS Olympics (stretch)', () => {
     })
 
     it("each athlete's win function should log to console", () => {
+      expect(athleteArray.length).toBeGreaterThan(1)
       for (const athlete of athleteArray) {
         athlete.win()
         expect(log).toBeCalledTimes(1)
@@ -41,6 +45,7 @@ describe.skip('The JS Olympics (stretch)', () => {
     })
 
     it("each athlete's win function should log to console", () => {
+      expect(athleteArray.length).toBeGreaterThan(1)
       for (const athlete of athleteArray) {
         athlete.win()
         expect(log).toBeCalledWith(
@@ -100,7 +105,7 @@ describe.skip('The JS Olympics (stretch)', () => {
       let a = newAthlete('Batman', 32, 'Fighting Crime', "I'm Batman")
 
       a.win()
-      expect(log).toBeCalledWith(`Batman wins the Fighting Crime event!`)
+      expect(log).toBeCalledWith(`Batman won the Fighting Crime event!`)
     })
   })
 })
