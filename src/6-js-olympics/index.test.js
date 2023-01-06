@@ -44,7 +44,7 @@ describe('The JS Olympics (stretch)', () => {
       }
     })
 
-    it("each athlete's win function should log to console", () => {
+    it("each athlete's win function should log to console with correct values", () => {
       expect(athleteArray.length).toBeGreaterThan(1)
       for (const athlete of athleteArray) {
         athlete.win()
