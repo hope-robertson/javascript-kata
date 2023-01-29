@@ -17,15 +17,9 @@ The suites are called:
 5. `5-builtin-methods`
 6. `6-js-olympics`
 
-or you can run them all at once like this:
-
-```sh
-$ npm test
-```
-
 When you first run the suites you'll see that all the tests are failing, your job is to go through each suite in order and update the code so that the tests pass.
 
-When you've completed suites 1-5 the terminal output should look a little like this
+When you've completed suites 1-5 you can run all the tests at once with `npm test` and the output should look a little like this
 
 ```sh
 $ npm test
