@@ -2,7 +2,7 @@
 
 let athleteArray = []
 
-var santa = {
+let santa = {
   name: 'Santa',
   age: '1748',
   sport: 'delivery',
@@ -59,4 +59,17 @@ function newAthlete (name, age, sport, quote) {
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+// write your code above this line----------------------------------
+// -----------------------------------------------------------------
 module.exports = { athleteArray, unjumble, removeOdds, newAthlete }
