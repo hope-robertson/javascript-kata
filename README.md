@@ -2,7 +2,7 @@
 
 First get all set up by running `npm install` in this directory, this can take a few minutes.
 
-This challenge is broken into 5 suites, you can run them each individually by running `npm run` followed by the name of the suite, like this:
+This challenge is broken into 5 suites, you can run them each individually by running `npm test` followed by the name of the suite, like this:
 
 ```sh
 $ npm test 1-variables-and-objects
@@ -25,7 +25,7 @@ $ npm test
 
 When you first run the suites you'll see that all the tests are failing, your job is to go through each suite in order and update the code so that the tests pass.
 
-When you've completed all 5 suites the output should look a little like this
+When you've completed suites 1-5 the terminal output should look a little like this
 
 ```sh
 $ npm test
