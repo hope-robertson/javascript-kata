@@ -1,8 +1,11 @@
 # Javascript Katas
 
-First get all set up by running `npm install` in this directory, this can take a few minutes.
+1. fork this repo
+2. clone your forked directory
+3. `cd` into the new directory and run `npm install`, this can take a few minutes
+4. `code .` to open the repo in VS Code.  
 
-This challenge is broken into 5 suites, you can run them each individually by running `npm test` followed by the name of the suite, like this:
+This challenge is broken into 5 suites. In your terminal you can run them each individually by running `npm test` followed by the name of the suite, like this:
 
 ```sh
 $ npm test 1-variables-and-objects
@@ -19,7 +22,7 @@ The suites are called:
 
 When you first run the suites you'll see that all the tests are failing, your job is to go through each suite in order and update the code so that the tests pass.
 
-When you've completed suites 1-5 you can run all the tests at once with `npm test` and the output should look a little like this
+When you've completed suites 1-5 you can run all the tests at once with `npm test` and the output should look a little like this:
 
 ```sh
 $ npm test
