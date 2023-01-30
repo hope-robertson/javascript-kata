@@ -8,7 +8,7 @@
 This challenge is broken into 5 suites. In your terminal you can run them each individually by running `npm test` followed by the name of the suite, like this:
 
 ```sh
-$ npm test 1-variables-and-objects
+$ npm test 1-variables-and-arrays
 ```
 
 The suites are called:
