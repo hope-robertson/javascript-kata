@@ -20,7 +20,7 @@ The suites are called:
 5. `5-builtin-methods`
 6. `6-js-olympics`
 
-When you first run the suites you'll see that all the tests are failing, your job is to go through each suite in order and update the code so that the tests pass.
+When you first run the suites you'll see that all the tests are failing, your job is to go through each suite in order and update the code so that the tests pass. Use the kata information in the Handbook as a guide. 
 
 When you've completed suites 1-5 you can run all the tests at once with `npm test` and the output should look a little like this:
 
