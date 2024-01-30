@@ -17,6 +17,7 @@ describe('adam', () => {
 
 describe('terah', () => {
   it('should have a spouse key with the value of the adam object', () => {
+    expect(terah).toHaveProperty('spouse')
     expect(terah.spouse).toBe(adam)
   })
 
