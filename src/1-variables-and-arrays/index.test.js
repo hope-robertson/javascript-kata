@@ -1,4 +1,6 @@
-const { secretNumber, password, allowedIn, members } = require('./index')
+import { describe, it, expect, vi } from 'vitest'
+
+import { secretNumber, password, allowedIn, members } from './index.js'
 
 describe('secretNumber', () => {
   it('should be assigned a value.', () => {

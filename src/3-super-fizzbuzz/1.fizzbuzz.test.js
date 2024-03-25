@@ -1,4 +1,5 @@
-const { fizzbuzz } = require('./fizzbuzz')
+import { describe, it, expect } from 'vitest'
+import { fizzbuzz } from './fizzbuzz.js'
 
 describe('fizzbuzz', () => {
   it("should return 'FizzBuzz' when passed a number divisible by 3 and by 5", () => {

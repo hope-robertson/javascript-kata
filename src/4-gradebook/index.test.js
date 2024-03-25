@@ -1,12 +1,14 @@
-const {
+import { describe, it, expect, vi } from 'vitest'
+
+import {
   gradebook,
   addScore,
   average,
   getAverage,
   enterScores,
   scores,
-} = require('./index')
-const students = ["Joseph", "Naomi", "Yosan", "David"]
+} from './index.js'
+const students = ['Joseph', 'Naomi', 'Yosan', 'David']
 
 describe('gradebook initialisation', () => {
   it('is an object', () => {
@@ -18,7 +20,9 @@ describe('gradebook initialisation', () => {
   })
 
   it("includes Wiremu's scores (the third entry in `scores`)", () => {
-    expect(gradebook.Wiremu && gradebook.Wiremu.testScores).toBe(scores[2])
+    // expect(gradebook.Wiremu && gradebook.Wiremu.testScores).toBe(scores[2])
+    expect(gradebook).toHaveProperty('Wiremu')
+    expect(gradebook.Wiremu).toHaveProperty('testScores', scores[2])
   })
 
   it("includes Susan's scores (the second entry in `scores`)", () => {

@@ -4,29 +4,7 @@
 // divisible by 5, then it should be replaced with the string "Buzz"
 // divisible by 3, then it should be replaced with the string "Fizz"
 
-function fizzbuzz(numberParameter) {
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+export function fizzbuzz(numberParameter) {}
 
 // write your code above this line----------------------------------
 // -----------------------------------------------------------------
-module.exports = { fizzbuzz }

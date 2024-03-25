@@ -1,4 +1,6 @@
-const { terah, adam } = require('./index')
+import { describe, it, expect, vi } from 'vitest'
+
+import { terah, adam } from './index.js'
 
 describe('adam', () => {
   it('should be an object', () => {

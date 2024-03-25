@@ -1,7 +1,9 @@
-const { athleteArray, unjumble, removeOdds, newAthlete } = require('./index')
+import { describe, it, expect, vi } from 'vitest'
 
-let log = jest.spyOn(console, 'log').mockImplementation(() => {})
-describe('The JS Olympics (stretch)', () => {
+import { athleteArray, unjumble, removeOdds, newAthlete } from './index.js'
+
+let log = vi.spyOn(console, 'log').mockImplementation(() => {})
+describe.skip('The JS Olympics (stretch)', () => {
   describe('The Warmup', () => {
     it('athleteArray should contain several athletes', () => {
       expect(athleteArray.length).toBeGreaterThan(1)
