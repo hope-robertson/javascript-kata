@@ -33,4 +33,4 @@ let adam
 
 // write your code above this line----------------------------------
 // -----------------------------------------------------------------
-module.exports = { terah, adam }
+export { terah, adam }

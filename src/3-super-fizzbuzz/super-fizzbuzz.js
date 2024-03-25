@@ -1,6 +1,6 @@
 /** @format */
 
-const { fizzbuzz } = require('./fizzbuzz')
+import { fizzbuzz } from './fizzbuzz.js'
 // The above line of code is importing your fizzbuzz function from the previous file you were working on
 // This allows you to use that function in this exercise
 
@@ -21,4 +21,4 @@ function superFizzbuzz(arrayParameter) {}
 
 // write your code above this line----------------------------------
 // -----------------------------------------------------------------
-module.exports = { superFizzbuzz }
+export { superFizzbuzz }

@@ -1,7 +1,9 @@
-const { concatMyArray } = require('./concatMyArray')
-const { capitalize } = require('./capitalize')
-const { whereAreYou } = require('./whereAreYou')
-const { deBee } = require('./deBee')
+import { describe, it, expect, vi } from 'vitest'
+
+import { concatMyArray } from './concatMyArray.js'
+import { capitalize } from './capitalize.js'
+import { whereAreYou } from './whereAreYou.js'
+import { deBee } from './deBee.js'
 
 describe('concatMyArray', () => {
   it('returns a string', () => {

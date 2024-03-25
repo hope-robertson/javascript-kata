@@ -1,4 +1,6 @@
-const { superFizzbuzz } = require('./super-fizzbuzz')
+import { describe, it, expect } from 'vitest'
+
+import { superFizzbuzz } from './super-fizzbuzz.js'
 
 describe('superFizzbuzz', () => {
   it('should return an empty array when passed an empty array', () => {
