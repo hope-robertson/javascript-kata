@@ -25,7 +25,7 @@ function superFizzbuzz(arrayParameter) {
     const currentNumber = arrayParameter[i]
     // call the imported fizzbuzz function on current number
     const fizzbuzzResult = fizzbuzz(currentNumber)
-    // push the fizzbuzz result into new array
+    // push the fizzbuzz result into new array=
     fizzbuzzedArray.push(fizzbuzzResult)
   }
   return fizzbuzzedArray
