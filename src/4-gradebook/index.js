@@ -14,26 +14,41 @@ const scores = [
 // write your code below this line---------------------------------
 
 // 1. Assign the gradebook variable with the value of an empty object.
-let gradebook
+let gradebook = {} // create an empty object
 
 // 2. Add each student (from the students array) as a property to the gradebook object.
 // The key should equal the student’s name and the value should equal a new empty object.
-
+for (let i = 0; i < students.length; i++) {
+  gradebook[students[i]] = {}
+}
 // 3. Add a new property with a key of testScores to each student property in gradebook.
 // The value of this property should be equal to the student’s scores in the scores array.
+for (let i = 0; i < students.length; i++) {
+  gradebook[students[i]].testScores = scores[i]
+}
 
 // 4. Complete the addScore function that has two parameters: studentName, and score.
 // addScore should add the score which is passed to it to the given student’s testScores array.
 // For example:
 // addScore("Susan", 80)  would push the score 80 into the value of gradebook.Susan.testScores
-function addScore(studentName, score) {}
+function addScore(studentName, score) {
+  gradebook[studentName].testScores.push(score)
+}
 
 // 5. Complete the average function that returns the average of a given array of numbers.
-function average(arr) {}
+function average(arr) {
+  let sum = 0 // initialising a variable to store the sum
+  for (let num of arr) {
+    sum += num // adding each element of array to sum
+  }
+  return sum / arr.length // calculate the average and return it
+}
 
 // 6. Complete the getAverage function that takes a name parameter and returns the average of that student’s testScores.
 // You can call the average function within this function.
-function getAverage(studentName) {}
+function getAverage(studentName) {
+  return average(gradebook[studentName].testScores) // use average function on student's testScores
+}
 
 // 7. STRETCH MATERIAL
 // If you wish to attempt this stretch material, don't forget to remove the "skip" part of the last test in the index.test.js file in this folder
@@ -45,4 +60,11 @@ function enterScores(gradebook, students, scores) {}
 
 // write your code above this line----------------------------------
 // -----------------------------------------------------------------
-export { gradebook, average, getAverage, addScore, enterScores, scores }
+module.exports = {
+  gradebook,
+  average,
+  getAverage,
+  addScore,
+  enterScores,
+  scores,
+}
