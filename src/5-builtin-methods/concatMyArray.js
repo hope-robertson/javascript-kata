@@ -6,7 +6,5 @@ function concatMyArray(arrayOfStrings) {
   return joinedString
 }
 let arrayOfStrings = ['zoom', 'zoom', '!']
-let result = concatMyArray(arrayOfStrings) //this isn't passing, need help
-// write your code above this line----------------------------------
-// -----------------------------------------------------------------
+let result = concatMyArray(arrayOfStrings)
 module.exports = { concatMyArray }
