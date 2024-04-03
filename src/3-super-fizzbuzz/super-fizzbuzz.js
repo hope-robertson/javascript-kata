@@ -1,6 +1,6 @@
 /** @format */
 
-import { fizzbuzz } from './fizzbuzz.js'
+const { fizzbuzz } = require('./fizzbuzz')
 // The above line of code is importing your fizzbuzz function from the previous file you were working on
 // This allows you to use that function in this exercise
 
@@ -17,8 +17,21 @@ import { fizzbuzz } from './fizzbuzz.js'
 
 // write your code below this line---------------------------------
 
-function superFizzbuzz(arrayParameter) {}
+function superFizzbuzz(arrayParameter) {
+  // Create a new empty array to store fizzbuzzed results
+  const fizzbuzzedArray = []
+  // Loop with each element in the array
+  for (let i = 0; i < arrayParameter.length; i++) {
+    const currentNumber = arrayParameter[i]
+    // call the imported fizzbuzz function on current number
+    const fizzbuzzResult = fizzbuzz(currentNumber)
+    // push the fizzbuzz result into new array
+    fizzbuzzedArray.push(fizzbuzzResult)
+  }
+  return fizzbuzzedArray
+}
 
 // write your code above this line----------------------------------
 // -----------------------------------------------------------------
-export { superFizzbuzz }
+module.exports = { superFizzbuzz }
+
